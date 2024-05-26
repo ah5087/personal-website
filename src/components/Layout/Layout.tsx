@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Layout.module.scss";
 
 interface LayoutProps {
@@ -8,28 +8,43 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.header}>
-          <div className={styles.logo}>
-            <h5>
-              <a href="/#/">alice</a>
-            </h5>
-          </div>
-          <div className={styles.nav}>
-            <a className="navContainerItem" id="0" href="/#/" draggable={false}>
-              <p>about me</p>
-            </a>
-            <a className="navContainerItem" id="1" href="/#/" draggable={false}>
-              <p>projects</p>
-            </a>
-            <a className="navContainerItem" id="2" href="/#/" draggable={false}>
-              <p>experience</p>
-            </a>
-          </div>
+      <div className={styles.header}>
+        <div className={styles.logo}>
+          <h5>
+            <a href="#about_me">alice</a>
+          </h5>
+        </div>
+        <div className={styles.nav}>
+          <a
+            className={styles.navContainerItem}
+            id="0"
+            href="#about_me"
+            draggable={false}
+          >
+            about me
+          </a>
+          <a
+            className={styles.navContainerItem}
+            id="1"
+            href="#projects"
+            draggable={false}
+          >
+            projects
+          </a>
+          <a
+            className={styles.navContainerItem}
+            id="2"
+            href="#experience"
+            draggable={false}
+          >
+            experience
+          </a>
         </div>
       </div>
-      <span className={styles.divider}></span>
-      {children}
+      <div className={styles.container}>
+        <span className={styles.divider}></span>
+        {children}
+      </div>
     </>
   );
 };

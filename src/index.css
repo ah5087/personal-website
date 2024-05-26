@@ -13,3 +13,12 @@
 h1 {
   text-align: center;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-top: 60px;
+  margin-top: -60px;
+}

@@ -1,78 +1,71 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-
-    font-family: "Roboto", sans-serif;
-}
-
-.logo {
-    font-family: "Satoshi-Black", sans-serif;
-    padding: 1em 0 1em 1em;
-    & > * {
-        user-select: none;
-    }
-    & > h5 > a {
-        color: #4a4a4a;
-    }
-
-    @media screen and (max-width: 992px) {
-        width: 0;
-    }
-}
-
 .header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-
-    display: grid;
-    grid-template-columns: 24vw auto 24vw;
-    background-color: #ffffff;
-}
-
-.nav {
-    grid-column-start: 2;
-
+    z-index: 1000;
+    background-color: white; /* Ensure the background color matches your design */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visibility */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2em;
-
-    padding: 1em 0 1em 0;
-
-    & > a {
-        text-decoration: none;
-        color: #3f3f3f;
-        user-select: none;
-        padding: 0.24em;
+    padding: 10px 20px; /* Adjust the padding as needed */
+  }
+  
+  .logo h5 a {
+    text-decoration: none;
+    color: black; /* Adjust to your desired text color */
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    align-items: center;
+    flex-grow: 1; /* Ensure nav takes up remaining space */
+    gap: 20px; /* Adjust the gap between nav items as needed */
+  }
+  
+  .navContainerItem {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set link text color */
+    font-weight: normal; /* Adjust font weight if necessary */
+    padding: 10px; /* Adjust padding as needed */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .navContainerItem:hover {
+    color: gray; /* Optional: Add hover effect */
+  }
+  
+  .container {
+    padding-top: 60px; /* Adjust this based on your header height */
+  }
+  
+  .section {
+    margin: 20px 10%; /* Adjust margins as needed, 10% on sides and 20px top/bottom */
+    padding: 20px; /* Optional: Add padding inside each section */
+    background-color: #f9f9f9; /* Optional: Add background color for better visibility */
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1em;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
     }
-
-    // & > a:hover {
-    // background-color: #bfe0ff;
-    // }
-
-    @media screen and (max-width: 992px) {
-        gap: 1em;
-        & > a > p {
-            font-size: clamp(0.8rem, 2vw, 1.2rem);
-        }
+  
+    .navContainerItem {
+      padding: 5px 0;
     }
-}
-
-.divider {
-    margin-bottom: 8em;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0.2em;
-    left: 0.4em;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-
-    backdrop-filter: blur(1px);
-    background-color: rgba(255, 255, 255, 0.2);
-}
+  
+    .section {
+      margin: 20px 5%; /* Adjust margins for smaller screens */
+    }
+  }
+  
