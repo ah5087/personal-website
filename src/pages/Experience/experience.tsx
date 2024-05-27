@@ -9,6 +9,13 @@ const experiences = [
       "Led outreach to raise and manage a $30k+ event budget. Oversaw logistics for 4 hackathons, each with 800+ applicants.",
   },
   {
+    title: "Logistics Chair",
+    company: "Princeton Women in Entrepreneurship (PWE)",
+    date: "Sep 2022 – May 2023",
+    description:
+      "Coordinated a workshop in New York with Stuart Weitzman, Kate Spade, and Coach for 30 members, featuring an executive panel and business problem-solving workshops.",
+  },
+  {
     title: "Director of Outreach",
     company: "FemaleFounded",
     date: "Mar 2023 – Sep 2023",
