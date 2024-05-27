@@ -8,7 +8,7 @@ const IntroSection = () => (
     className={`${commonStyles.section} ${styles.introSection}`}
   >
     <div className={styles.paragraphContainer}>
-      <h3>hey there!</h3>
+      <h3>hey there! 👋</h3>
       <p className={styles.paragraph}>
         I'm Alice, a junior studying Computer Science at Princeton. My first
         time coding was as a freshman in university, and I've since organized 4
