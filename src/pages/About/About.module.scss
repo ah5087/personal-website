@@ -1,39 +1,38 @@
 .section {
-    margin: 20px 10%; /* Adjust margins as needed */
-    padding: 20px; /* Add padding inside each section */
-    background-color: #FFFFFF; /* Add background color for better visibility */
-    border-radius: 8px; /* Add border radius for rounded corners */
+    margin: 20px 10%; 
+    padding: 20px; 
+    background-color: #FFFFFF;
+    border-radius: 8px;
   }
   
   h2 {
-    font-size: 24px; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust the font weight as needed */
-    margin-bottom: 20px; /* Add some margin below the heading */
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
   }
   
   .paragraph {
-    font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.5; /* Adjust the line height as needed */
+    font-size: 16px; 
+    line-height: 1.5;
   }
   
-  /* Responsive design */
   @media (max-width: 600px) {
     .section {
-      margin: 20px 5%; /* Adjust margins for smaller screens */
+      margin: 20px 5%; 
     }
   
     h2 {
-      font-size: 20px; /* Adjust the font size as needed for smaller screens */
+      font-size: 20px; 
     }
   
     .paragraph {
-      font-size: 14px; /* Adjust the font size as needed for smaller screens */
+      font-size: 14px; 
     }
   }
 
   .coursework {
-    list-style-type: disc; /* Use disc bullets */
-    padding-left: 20px; /* Add padding to the left for bullets */
+    list-style-type: disc; 
+    padding-left: 20px;
     margin-top: 20px;
   }
   
@@ -47,6 +46,6 @@
   }
   
   .courseTitle {
-    font-size: 16px; /* Adjust the font size as needed */
+    font-size: 16px;
   }
   

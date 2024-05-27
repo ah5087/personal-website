@@ -2,51 +2,50 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80vh; /* Adjust height to position lower on the screen */
-    margin-top: 60px; /* Adjust this to position the section lower, accounting for the fixed header */
-    background-color: #FFFFFF; /* Optional: Add background color for better visibility */
-    border-radius: 8px; /* Optional: Add border radius for rounded corners */
-    padding: 20px; /* Optional: Add padding inside each section */
+    height: 80vh; 
+    margin-top: 60px; 
+    background-color: #FFFFFF; 
+    border-radius: 8px; 
+    padding: 20px;
   }
   
   .photoContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%; /* Adjust the width as needed */
-    text-align: center; /* Center the text inside the section */
+    width: 40%; 
+    text-align: center; 
   }
   
   .photo {
-    width: 200px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
-    border-radius: 50%; /* Make the photo square */
-    object-fit: cover; /* Ensure the photo covers the area */
-    margin-bottom: 20px; /* Add some space below the photo */
+    width: 230px; 
+    height: 230px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
   }
   
   .introTitle {
-    font-size: 24px; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust the font weight as needed */
+    font-size: 24px; 
+    font-weight: bold; 
   }
   
   .paragraphContainer {
-    width: 60%; /* Adjust the width as needed */
-    padding-right: 20px; /* Optional: Add padding on the right for spacing */
+    width: 60%; 
+    padding-right: 20px; 
     text-align: left;
   }
   
   .paragraph {
-    font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.5; /* Adjust the line height as needed */
+    font-size: 16px; 
+    line-height: 1.5; 
   }
   
   .typewriter {
-    font-family: 'Fira Code', monospace; /* Use a monospace font for typewriter effect */
-    font-size: 16px; /* Adjust the font size as needed */
+    font-family: 'Fira Code', monospace; 
+    font-size: 16px; 
   }
   
-  /* Responsive design */
   @media (max-width: 600px) {
     .introSection {
       flex-direction: column;

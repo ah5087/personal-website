@@ -34,6 +34,21 @@ const experiences = [
 const Experience = () => (
   <section id="experience" className={styles.experienceSection}>
     <h2>Experience</h2>
+    <p className={styles.connect}>
+      <a
+        href="https://www.linkedin.com/in/alice-hou-/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.linkedinLink}
+      >
+        <img
+          src="/linkedin.webp"
+          alt="LinkedIn"
+          className={styles.linkedinIcon}
+        />
+        Let's connect!
+      </a>
+    </p>
     {experiences.map((exp, index) => (
       <div key={index} className={styles.experienceItem}>
         <h3 className={styles.title}>{exp.title}</h3>

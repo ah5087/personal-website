@@ -4,7 +4,7 @@ import About from "../pages/About/about";
 import Projects from "../pages/Projects/projects";
 import Experience from "../pages/Experience/experience";
 import IntroSection from "../pages/IntroSection/introsection";
-import "../index.css"; // Ensure smooth scrolling CSS is applied globally
+import "../index.css";
 
 const App = () => {
   useEffect(() => {
@@ -12,7 +12,7 @@ const App = () => {
       const id = window.location.hash.replace("#", "");
       const element = document.getElementById(id);
       if (element) {
-        const yOffset = -60; // Adjust this based on your header height
+        const yOffset = -60;
         const y =
           element.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: "smooth" });

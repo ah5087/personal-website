@@ -1,64 +1,59 @@
 .experienceSection {
-    margin: 20px 10%; /* Adjust margins as needed */
-    padding: 20px; /* Optional: Add padding inside the section */
-    background-color: #FFFFFF; /* Optional: Add background color for better visibility */
-    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    margin: 20px 10%;
+    padding: 20px; 
+    background-color: #FFFFFF;
+    border-radius: 8px; 
   }
   
-  h2 {
-    font-size: 24px; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust the font weight as needed */
-    margin-bottom: 20px; /* Add some margin below the heading */
+  .connect {
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .linkedinLink {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .linkedinLink:hover {
+    text-decoration: underline;
+  }
+  
+  .linkedinIcon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
   }
   
   .experienceItem {
-    margin-bottom: 20px; /* Add some space between items */
+    margin-bottom: 20px;
   }
   
   .title {
-    font-size: 20px; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust the font weight as needed */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
   }
   
   .details {
-    font-size: 14px; /* Adjust the font size as needed */
-    color: gray; /* Adjust the color as needed */
-    margin-bottom: 10px; /* Add some space below the details */
+    font-size: 16px;
+    margin-bottom: 5px;
   }
   
   .company {
-    font-weight: bold; /* Make company name bold */
+    font-weight: bold;
   }
   
   .date {
-    // font-style: italic; /* Make date italic */
+    // font-style: italic;
   }
   
   .description {
-    font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.5; /* Adjust the line height as needed */
-  }
-  
-  /* Responsive design */
-  @media (max-width: 600px) {
-    .experienceSection {
-      margin: 20px 5%; /* Adjust margins for smaller screens */
-    }
-  
-    h2 {
-      font-size: 20px; /* Adjust the font size as needed for smaller screens */
-    }
-  
-    .title {
-      font-size: 18px; /* Adjust the font size as needed for smaller screens */
-    }
-  
-    .details {
-      font-size: 12px; /* Adjust the font size as needed for smaller screens */
-    }
-  
-    .description {
-      font-size: 14px; /* Adjust the font size as needed for smaller screens */
-    }
+    font-size: 16px;
   }
   

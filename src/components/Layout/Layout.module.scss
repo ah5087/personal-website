@@ -4,96 +4,94 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: white; /* Ensure the background color matches your design */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visibility */
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* Adjust the padding as needed */
-  }
+    padding: 10px 20px;
+}
   
-  .logo h5 a {
+.logo h5 a {
     text-decoration: none;
-    color: black; /* Adjust to your desired text color */
-  }
+    color: black;
+}
   
-  .nav {
+.nav {
     display: flex;
-    justify-content: center; /* Center the nav items */
+    justify-content: center;
     align-items: center;
-    flex-grow: 1; /* Ensure nav takes up remaining space */
-    gap: 20px; /* Adjust the gap between nav items as needed */
-  }
+    flex-grow: 1;
+    gap: 20px;
+}
   
-  .navContainerItem {
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Set link text color */
-    font-weight: normal; /* Adjust font weight if necessary */
-    padding: 10px; /* Adjust padding as needed */
-    white-space: nowrap; /* Prevent text from wrapping */
-  }
+.navContainerItem {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    padding: 10px;
+    white-space: nowrap;
+}
   
-  .navContainerItem:hover {
-    color: gray; /* Optional: Add hover effect */
-  }
+.navContainerItem:hover {
+    color: gray;
+}
   
-  .container {
-    padding-top: 60px; /* Adjust this based on your header height */
-  }
+.container {
+    padding-top: 60px;
+}
   
-  .section {
-    margin: 20px 10%; /* Adjust margins as needed, 10% on sides and 20px top/bottom */
-    padding: 20px; /* Optional: Add padding inside each section */
-    background-color: #FFFFFF; /* Optional: Add background color for better visibility */
-    border-radius: 8px; /* Optional: Add border radius for rounded corners */
-  }
+.section {
+    margin: 20px 10%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
   
-  .title {
-    text-align: center; /* Center the title text */
-    margin-bottom: 20px; /* Optional: Add some margin below the title */
-  }
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
   
-  .intro-section {
+.intro-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 10%; /* Adjust margins as needed, 10% on sides and 20px top/bottom */
-    padding: 20px; /* Optional: Add padding inside each section */
-    background-color: #FFFFFF; /* Optional: Add background color for better visibility */
-    border-radius: 8px; /* Optional: Add border radius for rounded corners */
-  }
+    margin: 20px 10%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
   
-  .photo {
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
-    border-radius: 50%; /* Make the photo circular */
-    object-fit: cover; /* Ensure the photo covers the area */
-    margin-bottom: 20px; /* Add some space below the photo */
-  }
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
   
-  .intro-title {
-    font-size: 24px; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust the font weight as needed */
-    text-align: center; /* Center the title text */
-  }
+.intro-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
   
-  /* Responsive design */
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
     .nav {
-      flex-direction: column;
-      align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
   
     .navContainerItem {
-      padding: 5px 0;
+        padding: 5px 0;
     }
   
     .section {
-      margin: 20px 5%; /* Adjust margins for smaller screens */
+        margin: 20px 5%;
     }
   
     .intro-section {
-      margin: 20px 5%; /* Adjust margins for smaller screens */
+        margin: 20px 5%;
     }
-  }
-  
+}

@@ -1,23 +1,22 @@
 .projectsSection {
-    // Add any specific styles for the projects section if needed
-  }
+}
   
   .projectItem {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #f9f9f9; /* Optional: Add background color for better visibility */
-    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
   }
   
   .projectDetails {
-    flex: 2; /* Takes up more space */
-    margin-right: 20px; /* Add space between details and media */
+    flex: 2; 
+    margin-right: 20px; 
   }
   
   .projectMedia {
-    flex: 1; /* Takes up less space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,14 +30,14 @@
   
   .languages {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
+    align-items: center;
     font-size: 16px;
     margin-bottom: 10px;
   }
   
   .githubLink, .pdfLink {
-    display: flex; /* Ensure the link uses flexbox */
-    align-items: center; /* Center align the items vertically */
+    display: flex; 
+    align-items: center; 
     margin-right: 10px;
   }
   
@@ -55,15 +54,14 @@
   .projectImage, .projectVideo {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    border-radius: 8px; 
     margin-bottom: 10px;
   }
   
   .projectVideo {
-    aspect-ratio: 16 / 9; /* Ensure proper aspect ratio */
+    aspect-ratio: 16 / 9;
   }
   
-  /* Responsive design */
   @media (max-width: 600px) {
     .projectItem {
       flex-direction: column;

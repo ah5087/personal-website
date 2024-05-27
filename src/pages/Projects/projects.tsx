@@ -8,7 +8,7 @@ const projects = [
     languages: "Python",
     description:
       "Automated onboarding bot integrated into Slack, which manages user channels using emoji reactions and features a customizable welcome message.",
-    video: "https://www.youtube.com/embed/6ExcNBB_x_0", // Ensure this is the correct embed URL format
+    video: "https://www.youtube.com/embed/6ExcNBB_x_0",
     repo: "https://github.com/ah5087/slack-bot",
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     languages: "React, TypeScript",
     description: "Developed this website from scratch!",
     image: "",
-    repo: "https://github.com/username/project2",
+    repo: "https://github.com/ah5087/personal-website",
   },
   {
     title: "Expense Tracker",
@@ -31,7 +31,7 @@ const projects = [
     languages: "Python (tested in DMC and MuJoCo envs)",
     description: (
       <>
-        Re-implementation of{" "}
+        Complete re-implementation (no code references) of{" "}
         <a
           href="https://seohong.me/projects/metra/"
           target="_blank"
@@ -42,14 +42,34 @@ const projects = [
         , a novel unsupervised RL objective that can scale to environments with
         high intrinsic dimensionality such as complex image- and pixel-based
         environments. Final project for cos435 (Introduction to Reinforcement
-        Learning), our paper is linked.
+        Learning), our final submitted paper is also linked above.
       </>
     ),
     image: "",
     repo: "https://github.com/eugenechoi2004/metra",
-    pdf: "/cos435_metra.pdf", // Path to the PDF file
+    pdf: "/cos435_metra.pdf",
   },
-  // Add more projects as needed
+  {
+    title: "Raft (fault-tolerant key/value storage)",
+    languages: "Go",
+    description: (
+      <>
+        Complete re-implementation (no code references) of{" "}
+        <a
+          href="https://raft.github.io/raft.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Raft
+        </a>
+        , a distributed consensus algorithm that manages a replicated state
+        machine to maintain fault tolerance in the case of server crashes,
+        broken networks, or other failures. Part of cos418 (Distributed Systems)
+        coursework. Please contact me for my code if interested!
+      </>
+    ),
+    image: "",
+  },
 ];
 
 const Projects = () => (
@@ -63,18 +83,20 @@ const Projects = () => (
         <div className={styles.projectDetails}>
           <h3 className={styles.projectTitle}>{project.title}</h3>
           <div className={styles.languages}>
-            <a
-              href={project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.githubLink}
-            >
-              <img
-                src="/github-icon.png"
-                alt="GitHub Repository"
-                className={styles.githubIcon}
-              />
-            </a>
+            {project.repo && (
+              <a
+                href={project.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.githubLink}
+              >
+                <img
+                  src="/github-icon.png"
+                  alt="GitHub Repository"
+                  className={styles.githubIcon}
+                />
+              </a>
+            )}
             {project.pdf && (
               <a
                 href={project.pdf}
@@ -83,7 +105,7 @@ const Projects = () => (
                 className={styles.pdfLink}
               >
                 <img
-                  src="/download.svg" // Ensure you have a PDF icon in the public folder
+                  src="/download.svg"
                   alt="Download PDF"
                   className={styles.pdfIcon}
                 />
