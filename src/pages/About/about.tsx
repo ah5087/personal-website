@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./About.module.scss";
 import commonStyles from "../../styles/Common.module.scss";
 

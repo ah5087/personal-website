@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Experience.module.scss";
 
 const experiences = [
@@ -46,7 +45,7 @@ const Experience = () => (
           alt="LinkedIn"
           className={styles.linkedinIcon}
         />
-        Let's connect!
+        LinkedIn
       </a>
     </p>
     {experiences.map((exp, index) => (
