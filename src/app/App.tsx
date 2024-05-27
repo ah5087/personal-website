@@ -3,6 +3,7 @@ import Layout from "../components/Layout/Layout";
 import About from "../pages/About/about";
 import Projects from "../pages/Projects/projects";
 import Experience from "../pages/Experience/experience";
+import IntroSection from "../pages/IntroSection/introsection";
 import "../index.css"; // Ensure smooth scrolling CSS is applied globally
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
   return (
     <Layout>
       <>
+        <IntroSection />
         <About />
         <Projects />
         <Experience />

@@ -44,13 +44,37 @@
   .section {
     margin: 20px 10%; /* Adjust margins as needed, 10% on sides and 20px top/bottom */
     padding: 20px; /* Optional: Add padding inside each section */
-    background-color: #f9f9f9; /* Optional: Add background color for better visibility */
+    background-color: #FFFFFF; /* Optional: Add background color for better visibility */
     border-radius: 8px; /* Optional: Add border radius for rounded corners */
   }
   
-  .footer {
-    text-align: center;
-    padding: 1em;
+  .title {
+    text-align: center; /* Center the title text */
+    margin-bottom: 20px; /* Optional: Add some margin below the title */
+  }
+  
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10%; /* Adjust margins as needed, 10% on sides and 20px top/bottom */
+    padding: 20px; /* Optional: Add padding inside each section */
+    background-color: #FFFFFF; /* Optional: Add background color for better visibility */
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+  }
+  
+  .photo {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make the photo circular */
+    object-fit: cover; /* Ensure the photo covers the area */
+    margin-bottom: 20px; /* Add some space below the photo */
+  }
+  
+  .intro-title {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    text-align: center; /* Center the title text */
   }
   
   /* Responsive design */
@@ -65,6 +89,10 @@
     }
   
     .section {
+      margin: 20px 5%; /* Adjust margins for smaller screens */
+    }
+  
+    .intro-section {
       margin: 20px 5%; /* Adjust margins for smaller screens */
     }
   }
