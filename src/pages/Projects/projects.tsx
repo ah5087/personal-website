@@ -7,7 +7,7 @@ const projects = [
     title: "Slack Bot",
     languages: "Python",
     description:
-      "Automated onboarding bot integrated into Slack, which manages user channels using emoji reactions and features a customizable welcome message.",
+      "Automated onboarding bot integrated into Slack, which manages user channels using emoji reactions and features a customizable and interactive welcome message.",
     video: "https://www.youtube.com/embed/6ExcNBB_x_0",
     repo: "https://github.com/ah5087/slack-bot",
   },

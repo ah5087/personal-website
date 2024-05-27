@@ -52,14 +52,14 @@ const About = () => (
   >
     <h2>About Me</h2>
     <p className={commonStyles.paragraph}>
-      <b>👩‍💻 Languages:</b> Python, Java, Go, C, JavaScript, TypeScript,
-      HTML/CSS, ARMv8 Assembly
+      <b>Languages:</b> Python, Java, Go, C, JavaScript, TypeScript, HTML/CSS,
+      ARMv8 Assembly
     </p>
     <p className={commonStyles.paragraph}>
-      <b>💻 Technologies:</b> React, React Native, Node, Flask
+      <b>Technologies:</b> React, React Native, Node, Flask
     </p>
     <p className={commonStyles.paragraph}>
-      <b>📚 Relevant Coursework:</b>
+      <b>Relevant Coursework:</b>
     </p>
     <div className={styles.coursework}>
       {coursework.map((course, index) => (
