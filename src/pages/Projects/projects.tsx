@@ -13,10 +13,41 @@ const projects = [
   },
   {
     title: "Personal Website",
-    languages: "TypeScript, React",
-    description: "This is a description of Project Two.",
-    image: "/project2.jpg",
+    languages: "React, TypeScript",
+    description: "Developed this website from scratch!",
+    image: "",
     repo: "https://github.com/username/project2",
+  },
+  {
+    title: "Expense Tracker",
+    languages: "Python (used tkinter for GUI)",
+    description:
+      "Developed an expense tracking and budget-setting tool that helps you keep track of your total spending and a breakdown of your different spending categories.",
+    image: "",
+    repo: "https://github.com/ah5087/expense-tracker",
+  },
+  {
+    title: "METRA",
+    languages: "Python (tested in DMC and MuJoCo envs)",
+    description: (
+      <>
+        Re-implementation of{" "}
+        <a
+          href="https://seohong.me/projects/metra/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          METRA
+        </a>
+        , a novel unsupervised RL objective that can scale to environments with
+        high intrinsic dimensionality such as complex image- and pixel-based
+        environments. Final project for cos435 (Introduction to Reinforcement
+        Learning), our paper is linked.
+      </>
+    ),
+    image: "",
+    repo: "https://github.com/eugenechoi2004/metra",
+    pdf: "/cos435_metra.pdf", // Path to the PDF file
   },
   // Add more projects as needed
 ];
@@ -44,28 +75,46 @@ const Projects = () => (
                 className={styles.githubIcon}
               />
             </a>
+            {project.pdf && (
+              <a
+                href={project.pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.pdfLink}
+              >
+                <img
+                  src="/download.svg" // Ensure you have a PDF icon in the public folder
+                  alt="Download PDF"
+                  className={styles.pdfIcon}
+                />
+              </a>
+            )}
             {project.languages}
           </div>
           <p className={styles.description}>{project.description}</p>
         </div>
-        <div className={styles.projectMedia}>
-          {project.video ? (
-            <iframe
-              className={styles.projectVideo}
-              src={project.video}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              title={project.title}
-            ></iframe>
-          ) : (
-            <img
-              src={project.image}
-              alt={project.title}
-              className={styles.projectImage}
-            />
-          )}
-        </div>
+        {(project.video || project.image) && (
+          <div className={styles.projectMedia}>
+            {project.video ? (
+              <iframe
+                className={styles.projectVideo}
+                src={project.video}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title={project.title}
+              ></iframe>
+            ) : (
+              project.image && (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className={styles.projectImage}
+                />
+              )
+            )}
+          </div>
+        )}
       </div>
     ))}
   </section>
