@@ -10,7 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
       <div className={styles.header}>
         <div className={styles.logo}>
           <a href="#intro">
-            <img src="/home.svg" alt="Home" className={styles.homeIcon} />
+            <img src="/dog.jpg" alt="Home" className={styles.homeIcon} />
           </a>
         </div>
         <div className={styles.nav}>
