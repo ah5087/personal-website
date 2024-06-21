@@ -1,68 +1,88 @@
 .introSection {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80vh; 
-    margin-top: 60px; 
-    background-color: #FFFFFF; 
-    border-radius: 8px; 
-    padding: 20px;
-  }
-  
-  .photoContainer {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh; 
+  margin-top: 60px; 
+  background-color: #FFFFFF; 
+  border-radius: 8px; 
+  padding: 20px;
+}
+
+.photoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%; 
+  text-align: center; 
+}
+
+.photo {
+  width: 270px; 
+  height: 270px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-bottom: 20px; 
+}
+
+.introTitle {
+  font-size: 24px; 
+  font-weight: bold; 
+  display: flex;
+  align-items: center; 
+}
+
+.paragraphContainer {
+  width: 60%; 
+  padding-right: 20px; 
+  text-align: left;
+}
+
+.paragraph {
+  font-size: 18px; 
+  line-height: 1.5; 
+}
+
+.typewriter {
+  font-family: 'Fira Code', monospace; 
+  font-size: 16px; 
+}
+
+@media (max-width: 600px) {
+  .introSection {
     flex-direction: column;
     align-items: center;
-    width: 40%; 
-    text-align: center; 
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
   }
-  
-  .photo {
-    width: 270px; 
-    height: 270px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    margin-bottom: 20px; 
-  }
-  
-  .introTitle {
-    font-size: 24px; 
-    font-weight: bold; 
-  }
-  
+
+  .photoContainer,
   .paragraphContainer {
-    width: 60%; 
-    padding-right: 20px; 
-    text-align: left;
+    width: 100%;
+    padding: 0;
   }
-  
-  .paragraph {
-    font-size: 18px; 
-    line-height: 1.5; 
+
+  .paragraphContainer {
+    margin-top: 20px;
   }
-  
-  .typewriter {
-    font-family: 'Fira Code', monospace; 
-    font-size: 16px; 
-  }
-  
-  @media (max-width: 600px) {
-    .introSection {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      height: auto;
-      margin-top: 20px;
-    }
-  
-    .photoContainer,
-    .paragraphContainer {
-      width: 100%;
-      padding: 0;
-    }
-  
-    .paragraphContainer {
-      margin-top: 20px;
-    }
-  }
-  
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 7.5ch; }
+}
+
+@keyframes blinkCursor {
+  from { border-right-color: rgba(0, 0, 0, 0.75); }
+  to { border-right-color: transparent; }
+}
+
+.introTitle .text {
+  overflow: hidden;
+  border-right: 0.09em solid rgba(0, 0, 0, 0.75);
+  white-space: nowrap;
+  animation: 
+    typewriter 1s steps(10, end) 1s 1 normal both, 
+    blinkCursor .75s steps(40, end) infinite;
+}

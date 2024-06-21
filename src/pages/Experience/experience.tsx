@@ -27,7 +27,7 @@ const experiences = [
     company: "Johnson & Johnson",
     date: "May 2023 – Aug 2023",
     description:
-      "Worked on building a re-designed website interface that can be easily styled and reused across different company brands. Leveraged React, Contentful, Stackbit, and Agile Methodologies (Jira).",
+      "Revamped UI/UX for the customer-facing site in use by 90 brands, working in Agile sprints, developing in React, and testing in Contentful and Stackbit. Spearheaded key feature implementations for the platform launch, collaborating with business analysts and engineers in establishing the release scope.",
   },
   {
     title: "Software Engineering Intern",
